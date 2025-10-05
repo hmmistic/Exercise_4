@@ -14,3 +14,20 @@ D:\C# lesson\Travel_Ticket\Travel_Ticket\obj\Debug\net8.0-windows\refint\Travel_
 D:\C# lesson\Travel_Ticket\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.pdb
 D:\C# lesson\Travel_Ticket\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.genruntimeconfig.cache
 D:\C# lesson\Travel_Ticket\Travel_Ticket\obj\Debug\net8.0-windows\ref\Travel_Ticket.dll
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\bin\Debug\net8.0-windows\Travel_Ticket.exe
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\bin\Debug\net8.0-windows\Travel_Ticket.deps.json
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\bin\Debug\net8.0-windows\Travel_Ticket.runtimeconfig.json
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\bin\Debug\net8.0-windows\Travel_Ticket.dll
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\bin\Debug\net8.0-windows\Travel_Ticket.pdb
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.Form1.resources
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.csproj.GenerateResource.cache
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.AssemblyInfoInputs.cache
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.AssemblyInfo.cs
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.csproj.CoreCompileInputs.cache
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.sourcelink.json
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.dll
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\refint\Travel_Ticket.dll
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.pdb
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\Travel_Ticket.genruntimeconfig.cache
+C:\Users\Rashad\Source\Repos\Exercise_4\Travel_Ticket\obj\Debug\net8.0-windows\ref\Travel_Ticket.dll

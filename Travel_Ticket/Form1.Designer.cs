@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            label2 = new Label();
-            button1 = new Button();
-            label3 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
+            textBox1 = new TextBox();
+            label5 = new Label();
             maskedTextBox2 = new MaskedTextBox();
             label4 = new Label();
-            label5 = new Label();
-            textBox1 = new TextBox();
+            maskedTextBox1 = new MaskedTextBox();
+            label3 = new Label();
+            Switch = new Button();
+            comboBox2 = new ComboBox();
+            label2 = new Label();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
+            groupBox2 = new GroupBox();
+            BtnBuyTicket = new Button();
+            label9 = new Label();
+            textBox3 = new TextBox();
+            label8 = new Label();
             textBox2 = new TextBox();
             maskedTextBox3 = new MaskedTextBox();
             label6 = new Label();
             maskedTextBox4 = new MaskedTextBox();
             label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            textBox3 = new TextBox();
-            button2 = new Button();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             listBox1 = new ListBox();
-            button3 = new Button();
-            button4 = new Button();
+            BtnDelete = new Button();
+            BtnExit = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             panel1.SuspendLayout();
@@ -69,7 +69,7 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(maskedTextBox1);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(Switch);
             groupBox1.Controls.Add(comboBox2);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(comboBox1);
@@ -81,9 +81,107 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Marşurut";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(98, 217);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(169, 32);
+            textBox1.TabIndex = 10;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(42, 217);
+            label5.Name = "label5";
+            label5.Size = new Size(42, 25);
+            label5.TabIndex = 9;
+            label5.Text = "Yer:";
+            // 
+            // maskedTextBox2
+            // 
+            maskedTextBox2.Location = new Point(98, 174);
+            maskedTextBox2.Mask = "00:00";
+            maskedTextBox2.Name = "maskedTextBox2";
+            maskedTextBox2.Size = new Size(169, 32);
+            maskedTextBox2.TabIndex = 8;
+            maskedTextBox2.ValidatingType = typeof(DateTime);
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(41, 174);
+            label4.Name = "label4";
+            label4.Size = new Size(52, 25);
+            label4.TabIndex = 7;
+            label4.Text = "Saat:";
+            // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(98, 133);
+            maskedTextBox1.Mask = "00/00/0000";
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(169, 32);
+            maskedTextBox1.TabIndex = 6;
+            maskedTextBox1.ValidatingType = typeof(DateTime);
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(41, 133);
+            label3.Name = "label3";
+            label3.Size = new Size(55, 25);
+            label3.TabIndex = 5;
+            label3.Text = "Tarix:";
+            // 
+            // Switch
+            // 
+            Switch.Location = new Point(281, 44);
+            Switch.Name = "Switch";
+            Switch.Size = new Size(27, 78);
+            Switch.TabIndex = 4;
+            Switch.Text = "<\r\n>\r\n";
+            Switch.UseVisualStyleBackColor = true;
+            Switch.Click += BtnSwitch_Click;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "İstanbul", "Bakı", "Berlin", "Praqa", "Tehran" });
+            comboBox2.Location = new Point(98, 94);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(169, 33);
+            comboBox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(24, 97);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 25);
+            label2.TabIndex = 2;
+            label2.Text = "Haraya:";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "İstanbul", "Bakı", "Berlin", "Praqa", "Tehran" });
+            comboBox1.Location = new Point(98, 44);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(169, 33);
+            comboBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(23, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(88, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Haradan:";
+            // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(button2);
+            groupBox2.Controls.Add(BtnBuyTicket);
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(textBox3);
             groupBox2.Controls.Add(label8);
@@ -98,6 +196,82 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Sərnişin məlumatları";
+            // 
+            // BtnBuyTicket
+            // 
+            BtnBuyTicket.Location = new Point(130, 214);
+            BtnBuyTicket.Name = "BtnBuyTicket";
+            BtnBuyTicket.Size = new Size(169, 30);
+            BtnBuyTicket.TabIndex = 19;
+            BtnBuyTicket.Text = "Bilet al";
+            BtnBuyTicket.UseVisualStyleBackColor = true;
+            BtnBuyTicket.Click += BtnBuyTicket_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(31, 32);
+            label9.Name = "label9";
+            label9.Size = new Size(117, 25);
+            label9.TabIndex = 18;
+            label9.Text = "Ad və soyad:";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(130, 32);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(169, 32);
+            textBox3.TabIndex = 17;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(75, 167);
+            label8.Name = "label8";
+            label8.Size = new Size(62, 25);
+            label8.TabIndex = 16;
+            label8.Text = "Email:";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(130, 160);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(169, 32);
+            textBox2.TabIndex = 15;
+            // 
+            // maskedTextBox3
+            // 
+            maskedTextBox3.Location = new Point(130, 117);
+            maskedTextBox3.Mask = "(999) 000-0000";
+            maskedTextBox3.Name = "maskedTextBox3";
+            maskedTextBox3.Size = new Size(169, 32);
+            maskedTextBox3.TabIndex = 14;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(57, 117);
+            label6.Name = "label6";
+            label6.Size = new Size(77, 25);
+            label6.TabIndex = 13;
+            label6.Text = "Telefon:";
+            // 
+            // maskedTextBox4
+            // 
+            maskedTextBox4.Location = new Point(130, 76);
+            maskedTextBox4.Mask = "00000-9999";
+            maskedTextBox4.Name = "maskedTextBox4";
+            maskedTextBox4.Size = new Size(169, 32);
+            maskedTextBox4.TabIndex = 12;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(57, 76);
+            label7.Name = "label7";
+            label7.Size = new Size(85, 25);
+            label7.TabIndex = 11;
+            label7.Text = "ŞV/seria:";
             // 
             // panel1
             // 
@@ -117,213 +291,43 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(23, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(69, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Haradan:";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "İstanbul", "Bakı", "Berlin", "Praqa", "Tehran" });
-            comboBox1.Location = new Point(98, 44);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(169, 28);
-            comboBox1.TabIndex = 1;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "İstanbul", "Bakı", "Berlin", "Praqa", "Tehran" });
-            comboBox2.Location = new Point(98, 94);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(169, 28);
-            comboBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(24, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Haraya:";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(281, 44);
-            button1.Name = "button1";
-            button1.Size = new Size(27, 78);
-            button1.TabIndex = 4;
-            button1.Text = "<\r\n>\r\n";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(41, 133);
-            label3.Name = "label3";
-            label3.Size = new Size(42, 20);
-            label3.TabIndex = 5;
-            label3.Text = "Tarix:";
-            // 
-            // maskedTextBox1
-            // 
-            maskedTextBox1.Location = new Point(98, 133);
-            maskedTextBox1.Mask = "00/00/0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(169, 27);
-            maskedTextBox1.TabIndex = 6;
-            maskedTextBox1.ValidatingType = typeof(DateTime);
-            // 
-            // maskedTextBox2
-            // 
-            maskedTextBox2.Location = new Point(98, 174);
-            maskedTextBox2.Mask = "00:00";
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(169, 27);
-            maskedTextBox2.TabIndex = 8;
-            maskedTextBox2.ValidatingType = typeof(DateTime);
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(41, 174);
-            label4.Name = "label4";
-            label4.Size = new Size(41, 20);
-            label4.TabIndex = 7;
-            label4.Text = "Saat:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(42, 217);
-            label5.Name = "label5";
-            label5.Size = new Size(32, 20);
-            label5.TabIndex = 9;
-            label5.Text = "Yer:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(98, 217);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(169, 27);
-            textBox1.TabIndex = 10;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(130, 160);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(169, 27);
-            textBox2.TabIndex = 15;
-            // 
-            // maskedTextBox3
-            // 
-            maskedTextBox3.Location = new Point(130, 117);
-            maskedTextBox3.Mask = "(999) 000-0000";
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(169, 27);
-            maskedTextBox3.TabIndex = 14;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(57, 117);
-            label6.Name = "label6";
-            label6.Size = new Size(61, 20);
-            label6.TabIndex = 13;
-            label6.Text = "Telefon:";
-            // 
-            // maskedTextBox4
-            // 
-            maskedTextBox4.Location = new Point(130, 76);
-            maskedTextBox4.Mask = "00000-9999";
-            maskedTextBox4.Name = "maskedTextBox4";
-            maskedTextBox4.Size = new Size(169, 27);
-            maskedTextBox4.TabIndex = 12;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(57, 76);
-            label7.Name = "label7";
-            label7.Size = new Size(66, 20);
-            label7.TabIndex = 11;
-            label7.Text = "ŞV/seria:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(75, 167);
-            label8.Name = "label8";
-            label8.Size = new Size(49, 20);
-            label8.TabIndex = 16;
-            label8.Text = "Email:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(31, 32);
-            label9.Name = "label9";
-            label9.Size = new Size(93, 20);
-            label9.TabIndex = 18;
-            label9.Text = "Ad və soyad:";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(130, 32);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(169, 27);
-            textBox3.TabIndex = 17;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(130, 214);
-            button2.Name = "button2";
-            button2.Size = new Size(169, 30);
-            button2.TabIndex = 19;
-            button2.Text = "Bilet al";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
+            listBox1.ItemHeight = 25;
             listBox1.Location = new Point(12, 359);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(684, 84);
+            listBox1.Size = new Size(684, 79);
             listBox1.TabIndex = 3;
             // 
-            // button3
+            // BtnDelete
             // 
-            button3.Location = new Point(20, 453);
-            button3.Name = "button3";
-            button3.Size = new Size(157, 38);
-            button3.TabIndex = 4;
-            button3.Text = "Siyahıdan silmək";
-            button3.UseVisualStyleBackColor = true;
+            BtnDelete.Location = new Point(20, 453);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(157, 38);
+            BtnDelete.TabIndex = 4;
+            BtnDelete.Text = "Siyahıdan silmək";
+            BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
             // 
-            // button4
+            // BtnExit
             // 
-            button4.Location = new Point(528, 453);
-            button4.Name = "button4";
-            button4.Size = new Size(168, 38);
-            button4.TabIndex = 5;
-            button4.Text = "Proqramdan çıxış";
-            button4.UseVisualStyleBackColor = true;
+            BtnExit.Location = new Point(528, 453);
+            BtnExit.Name = "BtnExit";
+            BtnExit.Size = new Size(168, 38);
+            BtnExit.TabIndex = 5;
+            BtnExit.Text = "Proqramdan çıxış";
+            BtnExit.UseVisualStyleBackColor = true;
+            BtnExit.Click += BtnExit_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 128, 0);
             ClientSize = new Size(708, 503);
-            Controls.Add(button4);
-            Controls.Add(button3);
+            Controls.Add(BtnExit);
+            Controls.Add(BtnDelete);
             Controls.Add(listBox1);
             Controls.Add(panel1);
             Controls.Add(groupBox2);
@@ -353,13 +357,13 @@
         private Label label4;
         private MaskedTextBox maskedTextBox1;
         private Label label3;
-        private Button button1;
+        private Button Switch;
         private ComboBox comboBox2;
         private Label label2;
         private ComboBox comboBox1;
         private Label label1;
         private PictureBox pictureBox1;
-        private Button button2;
+        private Button BtnBuyTicket;
         private Label label9;
         private TextBox textBox3;
         private Label label8;
@@ -369,7 +373,7 @@
         private MaskedTextBox maskedTextBox4;
         private Label label7;
         private ListBox listBox1;
-        private Button button3;
-        private Button button4;
+        private Button BtnDelete;
+        private Button BtnExit;
     }
 }
